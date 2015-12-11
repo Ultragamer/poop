@@ -16,22 +16,31 @@
           <block type="oled_drawtext" id="35">
             <field name="TEXT">Your mom is me</field>
             <next>
-              <block type="oled_cleardisplay" id="102">
+              <block type="robot_delay" id="108" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="115">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="oled_setcursor" id="103" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="104">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="105">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
+                  <block type="oled_cleardisplay" id="102">
                     <next>
-                      <block type="oled_drawtext" id="106">
-                        <field name="TEXT">My name is Jeff!</field>
+                      <block type="oled_setcursor" id="103" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="104">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="105">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_drawtext" id="106">
+                            <field name="TEXT">My name is Jeff!</field>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
