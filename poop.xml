@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="35">
-            <field name="TEXT">NI OADS DJI</field>
+            <field name="TEXT">DEEZ NUTS!</field>
           </block>
         </next>
       </block>
