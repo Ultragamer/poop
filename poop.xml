@@ -38,7 +38,7 @@
                         </value>
                         <next>
                           <block type="oled_drawtext" id="106">
-                            <field name="TEXT">My name is Jeff!</field>
+                            <field name="TEXT">poop</field>
                           </block>
                         </next>
                       </block>
