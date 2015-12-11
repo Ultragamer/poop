@@ -14,12 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="35">
-            <field name="TEXT">99-4567</field>
-            <next>
-              <block type="oled_linerect" id="101">
-                <field name="OBJECT">LINE</field>
-              </block>
-            </next>
+            <field name="TEXT">Deez Butts</field>
           </block>
         </next>
       </block>
