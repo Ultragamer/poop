@@ -30,6 +30,9 @@
                         <field name="LIGHT">GREEN</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="oled_cleardisplay" id="258"></block>
+                    </next>
                   </block>
                 </statement>
               </block>
