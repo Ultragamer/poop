@@ -1,44 +1,45 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="102" y="207">
+  <block type="oled_cleardisplay" id="1" x="62" y="156">
     <next>
-      <block type="oled_setcursor" id="2" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="3">
-            <field name="NUM">0</field>
+      <block type="controls_whileUntil" id="150" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="213">
+            <field name="OBJECT">ENTER</field>
           </block>
         </value>
-        <value name="STARTY">
-          <block type="math_number" id="4">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <next>
-          <block type="oled_drawtext" id="5">
-            <field name="TEXT">Green=</field>
+        <statement name="DO">
+          <block type="oled_drawnumber" id="99" inline="true">
+            <value name="NUMBER">
+              <block type="sensor_spectrometer" id="90">
+                <field name="LIGHT">GREEN</field>
+              </block>
+            </value>
             <next>
-              <block type="controls_whileUntil" id="150" inline="false">
-                <field name="MODE">UNTIL</field>
-                <value name="NUMBER">
-                  <block type="sensor_button" id="213">
-                    <field name="OBJECT">ENTER</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="oled_drawnumber" id="99" inline="true">
-                    <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="90">
-                        <field name="LIGHT">GREEN</field>
-                      </block>
-                    </value>
+              <block type="oled_cleardisplay" id="258">
+                <next>
+                  <block type="oled_drawtext" id="5">
+                    <field name="TEXT">Green=</field>
                     <next>
-                      <block type="oled_cleardisplay" id="258"></block>
+                      <block type="oled_setcursor" id="2" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="3">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="4">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
                     </next>
                   </block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
