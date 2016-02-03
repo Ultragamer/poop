@@ -16,12 +16,22 @@
           <block type="oled_drawtext" id="5">
             <field name="TEXT">Green=</field>
             <next>
-              <block type="oled_drawnumber" id="99" inline="true">
+              <block type="controls_whileUntil" id="150" inline="false">
+                <field name="MODE">UNTIL</field>
                 <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="90">
-                    <field name="LIGHT">GREEN</field>
+                  <block type="sensor_button" id="213">
+                    <field name="OBJECT">ENTER</field>
                   </block>
                 </value>
+                <statement name="DO">
+                  <block type="oled_drawnumber" id="99" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_spectrometer" id="90">
+                        <field name="LIGHT">GREEN</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
               </block>
             </next>
           </block>
