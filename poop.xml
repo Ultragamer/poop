@@ -1,43 +1,43 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="25" x="102" y="207">
+  <block type="oled_cleardisplay" id="1" x="102" y="207">
     <next>
-      <block type="oled_setcursor" id="45" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="52">
+          <block type="math_number" id="3">
             <field name="NUM">0</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="59">
+          <block type="math_number" id="4">
             <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="35">
+          <block type="oled_drawtext" id="5">
             <field name="TEXT">Your mom is me</field>
             <next>
-              <block type="robot_delay" id="108" inline="true">
+              <block type="robot_delay" id="6" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="115">
+                  <block type="math_number" id="7">
                     <field name="NUM">5000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_cleardisplay" id="102">
+                  <block type="oled_cleardisplay" id="8">
                     <next>
-                      <block type="oled_setcursor" id="103" inline="true">
+                      <block type="oled_setcursor" id="9" inline="true">
                         <value name="STARTX">
-                          <block type="math_number" id="104">
+                          <block type="math_number" id="10">
                             <field name="NUM">0</field>
                           </block>
                         </value>
                         <value name="STARTY">
-                          <block type="math_number" id="105">
+                          <block type="math_number" id="11">
                             <field name="NUM">0</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_drawtext" id="106">
+                          <block type="oled_drawtext" id="12">
                             <field name="TEXT">poop on me </field>
                           </block>
                         </next>
